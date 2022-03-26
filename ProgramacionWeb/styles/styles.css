@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    color: #ffffff;
+    background: #1B2021;
+}
+
+nav {
+    display: inline;
+    float: left;
+    width: 20%;
+    margin-top: 1%;
+}
+
+.contenedor {
+    display: inline;
+    float: right;
+    width: 80%;
+}
+
+span:hover {
+    color: #D3D0CB;
+}
+
+h1 {
+    text-align: center;
+    height: 25%;
+    background-color: aqua;
+}
+
+.top {
+    background-color: gold;
+    height: 25%;
+}
+
+.top-mid {
+    background-color: orange;
+    height: 25%;
+}
+
+.top-bottom {
+    background-color: red;
+    height: 25%;
+}

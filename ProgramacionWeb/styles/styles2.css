@@ -1,0 +1,24 @@
+.top {
+    text-align: center;
+    margin-left: 200px;
+    padding: 200px;
+    background-color: aqua;
+}
+
+.top-mid {
+    background-color: gold;
+    margin-left: 200px;
+    padding: 200px;
+}
+
+.top-bottom {
+    background-color: orange;
+    margin-left: 200px;
+    padding: 200px;
+}
+
+.bottom {
+    background-color: red;
+    margin-left: 200px;
+    padding: 200px;
+}

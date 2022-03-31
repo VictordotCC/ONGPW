@@ -1,43 +1,56 @@
 body {
     font-family: sans-serif;
     color: #ffffff;
-    background: #1B2021;
+    background: #e7ebec;
+    margin: 0px;
 }
 
 nav {
-    display: inline;
     float: left;
     width: 20%;
-    margin-top: 1%;
+    padding-bottom: 100%;
+    background-color: #272525;
+
 }
 
 .contenedor {
-    display: inline;
     float: right;
     width: 80%;
+    padding: 0px;
+    margin: 0px;
+}
+
+span {
+    margin-top: 10px;
+    margin: 10px;
+    padding: 10px;
 }
 
 span:hover {
     color: #D3D0CB;
 }
 
-h1 {
+.top {
     text-align: center;
-    height: 25%;
+    padding: 25%;
     background-color: aqua;
 }
 
-.top {
-    background-color: gold;
-    height: 25%;
-}
-
 .top-mid {
-    background-color: orange;
-    height: 25%;
+    padding: 25%;
+    background-color: gold;
 }
 
 .top-bottom {
+    padding: 25%;
+    background-color: orange;
+}
+
+.bottom {
     background-color: red;
-    height: 25%;
+    padding: 25%;
+}
+
+h1, h2, p, ul {
+    margin: 0px;
 }

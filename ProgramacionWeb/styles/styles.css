@@ -8,7 +8,7 @@ body {
 nav {
     float: left;
     width: 20%;
-    padding-bottom: 100%;
+    padding-bottom: 41.5%;
     background-color: #272525;
 
 }
@@ -32,23 +32,30 @@ span:hover {
 
 .top {
     text-align: center;
-    padding: 25%;
+    padding-top: 68.9px;
+    padding-bottom: 68.9px;
     background-color: aqua;
 }
 
 .top-mid {
-    padding: 25%;
+    text-align: center;
+    padding-top: 68.9px;
+    padding-bottom: 68.9px;
     background-color: gold;
 }
 
 .top-bottom {
-    padding: 25%;
+    text-align: center;
+    padding-top: 68.9px;
+    padding-bottom: 68.9px;
     background-color: orange;
 }
 
 .bottom {
+    text-align: center;
     background-color: red;
-    padding: 25%;
+    padding-top: 68.9px;
+    padding-bottom: 68.9px;
 }
 
 h1, h2, p, ul {

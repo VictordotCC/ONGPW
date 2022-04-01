@@ -1,24 +1,27 @@
 .top {
     text-align: center;
-    margin-left: 200px;
-    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: aqua;
 }
 
 .top-mid {
     background-color: gold;
     margin-left: 200px;
-    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .top-bottom {
     background-color: orange;
     margin-left: 200px;
-    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .bottom {
     background-color: red;
     margin-left: 200px;
-    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

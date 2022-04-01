@@ -6,9 +6,10 @@ body {
 }
 
 nav {
+    position: fixed;
     float: left;
     width: 20%;
-    padding-bottom: 41.5%;
+    height: 100%;
     background-color: #272525;
 
 }
@@ -32,32 +33,36 @@ span:hover {
 
 .top {
     text-align: center;
-    padding-top: 68.9px;
-    padding-bottom: 68.9px;
+    padding-top: 85px;
+    padding-bottom: 85px;
     background-color: aqua;
 }
 
 .top-mid {
     text-align: center;
-    padding-top: 68.9px;
-    padding-bottom: 68.9px;
+    padding-top: 85px;
+    padding-bottom: 85px;
     background-color: gold;
 }
 
 .top-bottom {
     text-align: center;
-    padding-top: 68.9px;
-    padding-bottom: 68.9px;
+    padding-top: 85px;
+    padding-bottom: 85px;
     background-color: orange;
 }
 
 .bottom {
     text-align: center;
     background-color: red;
-    padding-top: 68.9px;
-    padding-bottom: 68.9px;
+    padding-top: 25px;
+    padding-bottom: 85px;
 }
 
 h1, h2, p, ul {
     margin: 0px;
+}
+
+img {
+    width: 12%;
 }

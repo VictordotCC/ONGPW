@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- custom stylesheet-->
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>ONG: Ayuda un Peludo</title>
   </head>
 <body>
@@ -21,13 +22,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="adopta.html">Adopta</a>
+                <a class="nav-link active" href="adopta.html">Adopta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
         </ul>
       </div>
@@ -35,7 +39,7 @@
   </nav>
 
 <div class = "container-fluid">
-<div class="row row-cols-3 row-cols-lg-3 justify-content-center fotos">
+<div class="row row-cols-3 row-cols-lg-4 justify-content-center fotos">
 
     
     <div class="card col" style="width: 18rem;">
@@ -43,7 +47,9 @@
         <div class="card-body">
           <h5 class="card-title">Tom</h5>
           <p class="card-text">Este gatito se llama Tom lo rescatamos cuando estaba siendo agredido por unos perros, estaba bastante mal herido pero logramos recuperarlo y esta buscando amo...</p>
-          <a href="fichaTOM.html" class="btn btn-primary">Ver</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalTom">
+            Ver
+          </button>
         </div>
     </div>
     <div class="card col" style="width: 18rem;">
@@ -51,7 +57,9 @@
         <div class="card-body">
           <h5 class="card-title">Seymour</h5>
           <p class="card-text">Este perrito se llama Seymour, lo encontramos cuando era un dia de lluvia, estaba al medio de la calle asustado y solito, lo rescatamos y le damos mucho cariño, ven a visitarlo...</p>
-          <a href="fichaSeymour.html" class="btn btn-primary">Ver</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalSeymour">
+            Ver
+          </button>
         </div>
     </div>
     <div class="card col" style="width: 18rem;">
@@ -59,35 +67,92 @@
         <div class="card-body">
           <h5 class="card-title">Max</h5>
           <p class="card-text">Este perrito se llama Max y lo encontramos dentro de una construccion a punto de ser destruida, lo rescatamos y le hicimos un buen chequeo medico, ven y echa un viztazo a su ficha...</p>
-          <a href="fichamax.html" class="btn btn-primary">Ver</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalMax">
+            Ver
+          </button>
         </div>
     </div>
+  </div>
+</div>
 
-    <!-- modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- modal de Tom-->
+    <div class="modal fade" id="ModalTom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="ModalTom">Tom</h5>
           </div>
           <div class="modal-body">
-            <img src="IMG/Perro1.jpg" class="card-img-top" alt="...">
-            <h1>Cachupin</h1>
-            <p> Cachupin es un perro muy tranquilo</p>
-          </div>
+            <div class="lista" >
+              <img src="IMG/Gato2.jpg" alt="Tom">
+              <ul class="list-group list-group-flush col-8">
+                  <li class="list-group-item">Nombre: Tom</li>
+                  <li class="list-group-item">Edad: 5 años</li>
+                  <li class="list-group-item">Género: Masculino</li>
+                  <li class="list-group-item">Esterilizado: No</li>
+                  <li class="list-group-item">Nº Chip: 8768394748494</li>
+                </ul>
+            </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Adoptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- modal de Seymour-->
+    <div class="modal fade" id="ModalSeymour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalSeymour">Seymour</h5>
+          </div>
+          <div class="modal-body">
+            <div class="lista" >
+              <img src="IMG/perro3.jpg" alt="Seymour">
+              <ul class="list-group list-group-flush col-8">
+                  <li class="list-group-item">Nombre: Seymour</li>
+                  <li class="list-group-item">Edad: 5 años</li>
+                  <li class="list-group-item">Género: Masculino</li>
+                  <li class="list-group-item">Esterilizado: No</li>
+                  <li class="list-group-item">Nº Chip: 8768394748494</li>
+                </ul>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Adoptar</button>
+          </div>
           </div>
         </div>
       </div>
     </div>
 
-</div>
-</div>
-
-<!-- javascript bootstrap-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- modal de Max-->
+    <div class="modal fade" id="ModalMax" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalMax">Max</h5>
+          </div>
+          <div class="modal-body">
+            <div class="lista" >
+              <img src="IMG/Perro1.jpg" alt="Max">
+              <ul class="list-group list-group-flush col-8">
+                  <li class="list-group-item">Nombre: Max</li>
+                  <li class="list-group-item">Edad: 5 años</li>
+                  <li class="list-group-item">Género: Masculino</li>
+                  <li class="list-group-item">Esterilizado: No</li>
+                  <li class="list-group-item">Nº Chip: 8768394748494</li>
+                </ul>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Adoptar</button>
+          </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
